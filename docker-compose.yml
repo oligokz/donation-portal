@@ -1,0 +1,21 @@
+services:
+  myinfo-test:
+    build: .
+    container_name: myinfo-test
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.myinfo-test.rule=Host(`test.qemura.xyz`)"
+      - "traefik.http.routers.myinfo-test.entrypoints=websecure"
+      - "traefik.http.routers.myinfo-test.tls.certresolver=letsencrypt"
+      - "traefik.http.services.myinfo-test.loadbalancer.server.port=3000"
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
