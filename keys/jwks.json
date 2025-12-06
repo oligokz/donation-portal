@@ -1,0 +1,22 @@
+{
+  "keys": [
+    {
+      "kty": "EC",
+      "x": "A7nkSwciAMC47_05yosk0VoohRVa1Fo_PICubo7Lrjc",
+      "y": "iDkxbWW5qwVAuklENwL9oU5pQZwhpU77X2krbwW-84s",
+      "crv": "P-256",
+      "use": "sig",
+      "alg": "ES256",
+      "kid": "sig-key-1"
+    },
+    {
+      "kty": "EC",
+      "x": "4l5BqM5TqhzzOpqytg-d1PvrbNfLWtf2ueuQ4-WjV5E",
+      "y": "8HsPWUgj1ATKso_eek42oJQag9E3ebMgLAn6yY6MuV4",
+      "crv": "P-256",
+      "use": "enc",
+      "alg": "ECDH-ES+A256KW",
+      "kid": "enc-key-1"
+    }
+  ]
+}
