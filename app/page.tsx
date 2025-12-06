@@ -44,6 +44,8 @@ const presetAmounts = {
   once: [25, 50, 100, 250],
 };
 
+const defaultMonthlyAmount = presetAmounts.monthly[0].toString();
+
 function BorderedSingpassButton({ className = "" }: { className?: string }) {
   return (
     <a
@@ -174,7 +176,7 @@ function EventCard({
 
 function DonationWizard({ event }: { event: Event }) {
   const [frequency, setFrequency] = useState<"monthly" | "once">("monthly");
-  const [amount, setAmount] = useState("20");
+  const [amount, setAmount] = useState(defaultMonthlyAmount);
   const [step, setStep] = useState<"amount" | "details">("amount");
   const [dedication, setDedication] = useState("");
 
