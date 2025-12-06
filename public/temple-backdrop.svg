@@ -1,0 +1,50 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2C4EA1" />
+      <stop offset="70%" stop-color="#8EC5FF" />
+      <stop offset="100%" stop-color="#F9D9A8" />
+    </linearGradient>
+    <linearGradient id="courtyard" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F4A361" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#F5C48B" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B43B1F" />
+      <stop offset="100%" stop-color="#E25C2A" />
+    </linearGradient>
+    <linearGradient id="roofHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F9D9A8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E56A2E" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)" />
+  <rect y="540" width="1600" height="360" fill="url(#courtyard)" />
+  <g opacity="0.8">
+    <rect x="220" y="420" width="1160" height="200" rx="12" fill="#FCEBD7" />
+    <rect x="320" y="460" width="960" height="150" rx="12" fill="#F7D3A8" />
+    <rect x="400" y="480" width="800" height="120" rx="10" fill="#F1C796" />
+  </g>
+  <g>
+    <path d="M260 430 Q800 280 1340 430 L1340 460 L260 460 Z" fill="url(#roof)" />
+    <path d="M260 430 Q800 320 1340 430" stroke="#F2B36E" stroke-width="14" stroke-linecap="round" />
+    <path d="M280 430 Q520 340 760 430" stroke="#F5CCA0" stroke-width="10" stroke-linecap="round" />
+    <path d="M840 430 Q1080 340 1320 430" stroke="#F5CCA0" stroke-width="10" stroke-linecap="round" />
+    <path d="M260 430 Q800 300 1340 430" fill="url(#roofHighlight)" />
+  </g>
+  <g fill="#E27F34" opacity="0.9">
+    <rect x="280" y="460" width="80" height="180" rx="16" />
+    <rect x="1240" y="460" width="80" height="180" rx="16" />
+  </g>
+  <g opacity="0.9">
+    <rect x="360" y="460" width="880" height="160" rx="12" fill="#FDF2E6" stroke="#E6B07B" stroke-width="8" />
+    <rect x="380" y="490" width="420" height="100" rx="10" fill="#F7D3A8" />
+    <rect x="820" y="490" width="320" height="100" rx="10" fill="#F4C18F" />
+  </g>
+  <g opacity="0.7" fill="#EFB671">
+    <circle cx="240" cy="520" r="50" />
+    <circle cx="1360" cy="520" r="50" />
+  </g>
+  <rect x="500" y="620" width="600" height="40" rx="8" fill="#D17333" opacity="0.9" />
+  <rect x="540" y="660" width="520" height="28" rx="6" fill="#F6D9A4" opacity="0.9" />
+</svg>
